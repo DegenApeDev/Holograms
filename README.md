@@ -1,9 +1,9 @@
 # Holograms
 
-This plugin can add FloatingText to your Server!
+This plugin lets you add FloatingText to your Server!
 
 # Commands:
 
 - /hg = Show Help Page
-- /hgaddtext <text(unlimited args)> = Add a Holograms without File
-- /hgremove = Remove Hologram
+- /hg addtext <text(unlimited args)> = Add Holograms
+- /hg remove = Remove Holograms
