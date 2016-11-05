@@ -70,7 +70,7 @@
 				Entity::DATA_NO_AI => [Entity::DATA_TYPE_BYTE, 1],
 				Entity::DATA_LEAD_HOLDER => [Entity::DATA_TYPE_LONG, -1],
 				Entity::DATA_LEAD => [Entity::DATA_TYPE_BYTE, 0]
-	                        Entity::DATA_FLAGS => [Entity::DATA_FLAG_INVISIBLE, 1],
+	            Entity::DATA_FLAGS => [Entity::DATA_FLAG_INVISIBLE, 1],
        ];
     $p->dataPacket($pk);
     parent::spawnTo($p);
