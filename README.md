@@ -6,4 +6,4 @@ This plugin lets you add FloatingText to your Server!
 
 - /hg = Show Help Page
 - /hg addtext <text(unlimited args)> = Add Holograms
-- /hg remove = Remove Holograms
+- /hg remove = Remove Hologram
