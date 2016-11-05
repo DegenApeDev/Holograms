@@ -192,28 +192,7 @@
    				    	}
    				    }
    				    $s->sendMessage("§6[§5Hologram§6]§7 All old Hologram has been updated!");
-   				    break;
-               case "tpme":
-       if(!empty($args[1])){
-       	$entities=$s->getLevel()->getEntities();
-       	$target=null;
-       	foreach($entities as $text){
-       		if($text instanceof Text){
-       			if(strpos($args[1], $text->getNameTag())!=false or $text->getName()==$args[1]){
-       				$target=$text;
-       			}
-       		}
-       	}
-       	if($target!=null){
-       		$target->teleport($s);
-       		$s->sendMessage("§6[§5Hologram§6]§7 §aHologram teleported to you");
-       	}else{
-       		$s->sendMessage("§6[§5Hologram§6]§7 §cInvalid Hologram!");
-       	}
-       }else{
-       	$s->sendMessage("§6[§5Hologram§6]§7 §eUsage: /lt tpme <Hologramname>");
-       }
-       break;
+   				    break;	    
    		  case "cancel":
    		      if(isset($main->removers[$s->getName()])){
    		      	 unset($main->removers[$s->getName()]);

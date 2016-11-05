@@ -64,13 +64,13 @@
     $pk->pitch = 0;
     $pk->item = Item::get(0);
     $pk->metadata = [
-				Entity::DATA_FLAGS => [Entity::DATA_TYPE_BYTE, 1 <<    Entity::DATA_FLAG_INVISIBLE],
+				//Entity::DATA_FLAGS => [Entity::DATA_TYPE_BYTE, 1 <<    Entity::DATA_FLAG_INVISIBLE],
 				Entity::DATA_NAMETAG => [Entity::DATA_TYPE_STRING, $this->text],
 				Entity::DATA_SHOW_NAMETAG => [Entity::DATA_TYPE_BYTE, 1],
 				Entity::DATA_NO_AI => [Entity::DATA_TYPE_BYTE, 1],
 				Entity::DATA_LEAD_HOLDER => [Entity::DATA_TYPE_LONG, -1],
 				Entity::DATA_LEAD => [Entity::DATA_TYPE_BYTE, 0]
-	            Entity::DATA_FLAGS => [Entity::DATA_FLAG_INVISIBLE, 1],
+	            Entity::DATA_FLAGS_INVISBLE => [Entity::DATA_FLAG_BYTE, 1],
        ];
     $p->dataPacket($pk);
     parent::spawnTo($p);
